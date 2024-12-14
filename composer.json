@@ -1,0 +1,17 @@
+{
+    "name": "volodymyr/console-app",
+    "autoload": {
+        "psr-4": {
+            "Volodymyr\\ConsoleApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Volodymyr Honcharov",
+            "email": "ladimirvm87@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^7.2"
+    }
+}

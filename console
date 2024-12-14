@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+use Volodymyr\ConsoleApp\Application;
+use Volodymyr\ConsoleApp\Kernel;
+
+include 'vendor/autoload.php';
+
+$namespace = 'Volodymyr\\ConsoleApp\\Commands\\';
+$argv = $_SERVER['argv'] ?? [];
+
+$application = new Application(namespace: $namespace, argv: $argv);
+$kernel = new Kernel($application);
+
+$status = $kernel->handle();
+
+exit($status);
